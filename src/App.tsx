@@ -8,7 +8,6 @@ class TaskList extends React.Component <{}, any>{
 
   constructor(props:any) {
     super(props);
-    console.log("  props === >  ", props);
     this.state = {taskList: [] as any};
   }
 
@@ -38,7 +37,6 @@ class TaskList extends React.Component <{}, any>{
   }
 
   taskChanged = (task: any, id: number) => {
-    console.log(" task ", "id", id);
     this.selectList = task;
   }
 
